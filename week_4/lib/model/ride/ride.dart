@@ -40,7 +40,7 @@ class Ride {
   });
 
   void addPassenger(User passenger) {
-    passengers.add(passenger);
+    passengers.add(passenger);  
   }
 
   int get remainingSeats => availableSeats - passengers.length;
