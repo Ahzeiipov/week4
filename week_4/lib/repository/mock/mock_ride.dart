@@ -1,9 +1,9 @@
 import '../../model/ride/ride.dart';
 import '../../model/user/user.dart';
 import '../../model/ride_pref/ride_pref.dart';
-import '../../service/rides_service.dart';
 import 'ride_repository.dart';
 import '../../model/ride/locations.dart';
+import '../../screens/ride_pref/widgets/ride_filter.dart';
 
 class MockRidesRepository extends RidesRepository {
   final List<Ride> rides = [
