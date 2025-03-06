@@ -9,7 +9,7 @@ class MockLocationRepository extends LocationRepository {
     Location(name: "Sihanoukville", country:Country.cambodia),
     Location(name: "Kampot", country:Country.cambodia),
    
-  ];
+  ];  
   @override
   List<Location> getLocations() {
     return location;

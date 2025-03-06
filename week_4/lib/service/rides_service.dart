@@ -7,6 +7,14 @@ import '../model/ride/ride.dart';
 ///   This service handles:
 ///   - The list of available rides
 ///
+
+
+class RidesFilter {
+  final bool acceptPets;
+
+  RidesFilter({required this.acceptPets});
+}
+
 class RidesService {
 
   static List<Ride> availableRides = fakeRides;  

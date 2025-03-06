@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:week_3_blabla_project/model/ride/locations.dart';
 
 import '../../utils/date_time_util.dart';
@@ -25,6 +26,9 @@ class Ride {
   final int availableSeats;
   final double pricePerSeat;
 
+  //  add new atribute 
+  final bool acceptPets ;
+
   RideStatus status = RideStatus.created;
 
   final List<User> passengers = [];
@@ -37,6 +41,7 @@ class Ride {
     required this.driver,
     required this.availableSeats,
     required this.pricePerSeat,
+    this.acceptPets = false,
   });
 
   void addPassenger(User passenger) {
