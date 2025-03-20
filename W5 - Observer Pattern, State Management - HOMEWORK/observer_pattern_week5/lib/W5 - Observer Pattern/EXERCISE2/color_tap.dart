@@ -24,6 +24,7 @@ class ColorTap extends StatelessWidget {
         width: 500,
         height: 100,
         color: color,
+        
       ),
     );
   }

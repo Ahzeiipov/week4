@@ -1,8 +1,6 @@
-// lib/EXERCISE-1/main.dart
-import '../EXERCISE1/ride_preferences_service.dart';
-import '../EXERCISE1/console_log.dart'; // Update this import
 
-
+import '../W5 - Observer Pattern/EXERCISE1/ride_preferences_service.dart';
+import '../W5 - Observer Pattern/EXERCISE1/console_log.dart';
 
 void main() {
   var service = RidePreferencesService();
