@@ -12,6 +12,7 @@ class HttpPostsRepository extends PostRepository {
 
     if (response.statusCode == 200) {
       try {
+        // once it successfully fetches the post data, it will parse the JSON response
         final Map<String, dynamic> data = json.decode(response.body);
         return Post.fromJson(data);
       } catch (e) {

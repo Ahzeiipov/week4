@@ -3,20 +3,20 @@ import '../models/course.dart';
 import '../repositories/courses_repository.dart';
 
 class CourseProvider with ChangeNotifier {
-  final CoursesRepository _coursesRepository;
+  final CoursesRepository coursesRepository;
 
-  CourseProvider(this._coursesRepository);
+  CourseProvider(this.coursesRepository);
 
   Course getCourseFor(String courseId) {
-    return _coursesRepository
+    return coursesRepository
         .getCourses()
         .firstWhere((course) => course.id == courseId);
   }
 
-  List<Course> get courses => _coursesRepository.getCourses();
+  List<Course> get courses => coursesRepository.getCourses();
 
   void addScore(Course course, CourseScore score) {
-    _coursesRepository.addScore(course, score);
+    coursesRepository.addScore(course, score);
     notifyListeners();
   }
 }
